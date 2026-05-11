@@ -1,0 +1,77 @@
+/* ===== FOOTER ===== */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 20px 40px;
+  background: #ffffff;
+  z-index: 9999;
+}
+
+/* links */
+.footer a {
+  text-decoration: none;
+
+  color: #5c5e62;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/* hover */
+.footer a:hover {
+  color: #111;
+}
+/* ===== FIXED BAR ===== */
+.drive-bar {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14px 20px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  backdrop-filter: blur(10px);
+
+  border-top: 1px solid #ddd;
+
+  z-index: 9997;
+}
+
+/* ===== BUTTON ===== */
+.drive-btn {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background: #f7f7f7;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* icon */
+.icon {
+  font-size: 22px;
+
+  color: #3e6ae1;
+}
+.menu-toggle {
+  display: none;
+}

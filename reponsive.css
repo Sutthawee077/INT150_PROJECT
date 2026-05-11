@@ -1,0 +1,641 @@
+@media (max-width: 768px) {
+  /* ========================= */
+  /* NAVBAR */
+  /* ========================= */
+
+  .navbar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    background: transparent;
+  }
+
+  .navbar a {
+    display: flex;
+
+    align-items: center;
+  }
+
+  /* hide desktop */
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+
+  /* logo */
+  .nav-left img {
+    width: 110px;
+
+    display: block;
+  }
+
+  /* menu button */
+  .menu-toggle {
+    display: flex;
+
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    z-index: 999999;
+  }
+
+  /* ========================= */
+  /* HERO */
+  /* ========================= */
+
+  .slider {
+    height: 100vh;
+  }
+
+  .modely-slide {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-Y-L-Mobile-AU-NZ.jpg");
+  }
+
+  .model3-slide {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-3-Mobile-RHD-APAC.jpg");
+  }
+
+  .modely2-slide {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Model-Y-Premium-Mobile-RHD-APAC.jpg");
+  }
+  .slide {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    transition: 0.6s;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+  }
+
+  .slide.active {
+    opacity: 1;
+
+    z-index: 1;
+  }
+
+  .slide::before {
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  /* content */
+  .content {
+    top: 10%;
+
+    width: 100%;
+
+    padding: 0 22px;
+
+    text-align: center;
+  }
+
+  /* title */
+  .content h1 {
+    font-size: 52px;
+
+    color: white;
+
+    margin-bottom: 8px;
+  }
+
+  /* description */
+  .desc {
+    font-size: 15px;
+
+    color: white;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+  }
+
+  /* link */
+  .test-drive {
+    font-size: 16px;
+
+    color: white;
+
+    margin-bottom: 24px;
+  }
+
+  /* buttons */
+  .buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 24px;
+  }
+
+  .primary,
+  .secondary {
+    flex: 1;
+
+    height: 44px;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+  }
+
+  .primary {
+    background: #3e6ae1;
+
+    color: white;
+  }
+
+  .secondary {
+    background: white;
+
+    color: black;
+  }
+
+  /* hide arrows */
+  .prev,
+  .next {
+    display: none;
+  }
+
+  /* dots */
+  .dots {
+    position: absolute;
+
+    bottom: 95px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    z-index: 100;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .dot.active {
+    background: white;
+  }
+
+  .banner-section {
+    display: flex;
+
+    gap: 16px;
+
+    overflow-x: auto;
+
+    padding: 18px 12px;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+  }
+
+  .banner-section::-webkit-scrollbar {
+    display: none;
+  }
+
+  .banner-card {
+    min-width: 86%;
+
+    height: 460px;
+
+    flex: none;
+
+    scroll-snap-align: center;
+
+    border-radius: 14px;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  .banner-content {
+    padding: 22px;
+  }
+
+  .banner-content h1 {
+    font-size: 52px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .banner-buttons {
+    display: flex;
+
+    gap: 10px;
+  }
+
+  .banner-buttons button {
+    flex: 1;
+
+    height: 42px;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+  }
+
+  /* ========================= */
+  /* PROMO */
+  /* ========================= */
+
+ .promo-section{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    padding:18px;
+  }
+
+  .promo-card{
+    min-height:auto;
+
+    padding:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:stretch;
+  }
+
+  /* รูป */
+  .promo-card img{
+    position:static;
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    display:block;
+    order: 1;
+  }
+
+  /* content */
+  .promo-content{
+    position:static;
+
+    width:100%;
+
+    padding:22px;
+
+    text-align:left;
+    order: 2;
+  }
+
+  .promo-content h2{
+    font-size:24px;
+  }
+
+  .promo-content p{
+    font-size:16px;
+
+    margin-bottom:18px;
+  }
+
+  .promo-content button{
+    width:100%;
+  }
+
+  
+  /* map */
+  .map-section{
+    padding:0;
+  }
+
+  .map-section img{
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:0;
+
+    display:block;
+  }
+
+/* white content */
+.charge-section{
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:flex-start;
+
+  gap:28px;
+
+  margin:0;
+
+  padding:28px 24px 32px;
+
+  background:white;
+}
+
+/* 🔥 trick */
+.charge-left{
+  display:contents;
+}
+
+/* title */
+.charge-left h1{
+  order:1;
+
+  font-size:32px;
+
+  line-height:1;
+
+  margin-bottom:18px;
+}
+
+/* desc */
+.charge-left p{
+  order:2;
+
+  font-size:18px;
+
+  line-height:1.5;
+
+  max-width:100%;
+
+  margin-bottom:0;
+}
+
+/* stats */
+.charge-right{
+  order:3;
+
+  width:100%;
+
+  display:flex;
+
+  gap:40px;
+
+  margin-top:8px;
+}
+
+.charge-stat{
+  flex:1;
+}
+
+/* numbers */
+.number-row{
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  margin-bottom:8px;
+}
+
+.number-row h2{
+  font-size:32px;
+}
+
+/* icon */
+.icon{
+  width:42px;
+  height:42px;
+
+  font-size:20px;
+}
+
+/* text */
+.charge-stat span{
+  font-size:16px;
+
+  line-height:1.3;
+}
+
+/* buttons */
+.charge-buttons{
+  order:4;
+
+  width:100%;
+
+  display:flex;
+
+  gap:14px;
+
+  margin-top:0;
+}
+
+.dark-btn,
+.light-btn{
+  flex:1;
+
+  height:48px;
+
+  width:auto;
+
+  font-size:16px;
+
+  border-radius:4px;
+}
+
+  /* ========================= */
+  /* ENERGY */
+  /* ========================= */
+
+.energy-banner-section{
+  display:flex;
+
+  gap:16px;
+
+  overflow-x:auto;
+
+  padding:18px 12px;
+
+  scroll-snap-type:x mandatory;
+
+  scrollbar-width:none;
+}
+
+.energy-banner-section::-webkit-scrollbar{
+  display:none;
+}
+
+/* card */
+.energy-card{
+  min-width:86%;
+
+  height:460px;
+
+  flex:none;
+
+  scroll-snap-align:center;
+
+  border-radius:14px;
+
+  background-size:cover;
+
+  background-position:center;
+}
+
+/* content */
+.energy-content{
+  padding:24px;
+}
+
+/* title */
+.energy-content h1{
+  font-size:52px;
+
+  margin-bottom:8px;
+}
+
+/* desc */
+.energy-content p{
+  font-size:16px;
+
+  line-height:1.4;
+
+  margin-bottom:20px;
+}
+
+/* buttons */
+.energy-buttons{
+  display:flex;
+
+  gap:10px;
+}
+
+.energy-buttons button{
+  flex:1;
+
+  height:42px;
+
+  font-size:13px;
+
+  border-radius:4px;
+}
+  /* ========================= */
+  /* FOOTER */
+  /* ========================= */
+
+  .footer {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    padding: 24px;
+
+    text-align: center;
+  }
+
+  /* ========================= */
+  /* DRIVE BAR */
+  /* ========================= */
+
+  .drive-bar {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    border-top: 1px solid #ddd;
+
+    z-index: 99999;
+  }
+
+  .drive-btn {
+    width: 100%;
+
+    height: 48px;
+
+    border-radius: 6px;
+
+    background: #f3f3f3;
+
+    border: 1px solid #d8d8d8;
+
+    font-size: 16px;
+  }
+
+  /* ========================= */
+  /* BODY */
+  /* ========================= */
+
+  body {
+    padding-bottom: 88px;
+  }
+}

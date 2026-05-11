@@ -1,0 +1,344 @@
+/* ===== SECTION ===== */
+.promo-section {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 24px;
+
+  padding: 40px;
+
+  background: #ffffff;
+}
+
+/* ===== CARD ===== */
+.promo-card {
+  background: #ececec;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  min-height: 210px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0 40px 40px;
+}
+
+/* ===== CONTENT ===== */
+.promo-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* title */
+.promo-content h2 {
+  font-size: 28px;
+
+  margin-bottom: 8px;
+
+  color: #111;
+}
+
+/* desc */
+.promo-content p {
+  font-size: 16px;
+
+  color: #555;
+
+  margin-bottom: 24px;
+
+  max-width: 320px;
+
+  line-height: 1.5;
+}
+
+/* button */
+.promo-content button {
+  width: 230px;
+
+  height: 40px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  background: white;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* hover */
+.promo-content button:hover {
+  background: #ddd;
+}
+
+/* image */
+.promo-card img {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+.map-section {
+  padding: 50px;
+}
+
+.map-section img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+/* ===== SECTION ===== */
+.charge-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 60px 0 60px;
+  margin: 0 50px 0 50px;
+  background: #ffffff;
+}
+
+/* ===== LEFT ===== */
+.charge-left h1 {
+  font-size: 72px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.charge-left p {
+  font-size: 22px;
+
+  color: #555;
+
+  max-width: 760px;
+
+  line-height: 1.5;
+
+  margin-bottom: 36px;
+}
+
+/* buttons */
+.charge-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+/* dark */
+.dark-btn {
+  width: 180px;
+  height: 52px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #111827;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* light */
+.light-btn {
+  width: 180px;
+  height: 52px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #e8e8e8;
+
+  color: #111;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* ===== RIGHT ===== */
+.charge-right {
+  display: flex;
+
+  gap: 80px;
+
+  margin-top: 10px;
+}
+
+/* stat */
+.charge-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+/* number row */
+.number-row {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 8px;
+}
+
+/* number */
+.number-row h2 {
+  font-size: 72px;
+
+  color: #111;
+}
+
+/* icon */
+.icon {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 28px;
+
+  color: white;
+}
+
+/* red */
+.red {
+  background: #ff3b30;
+}
+
+/* gray */
+.gray {
+  background: #9e9e9e;
+}
+
+/* text */
+.charge-stat span {
+  font-size: 22px;
+
+  color: #555;
+}
+
+/* ===== SECTION ===== */
+.energy-banner-section {
+  display: grid;
+
+  grid-template-columns: 1.3fr 1fr;
+
+  gap: 24px;
+
+  padding: 40px;
+
+  background: #ffffff;
+}
+
+/* ===== CARD ===== */
+.energy-card {
+  position: relative;
+
+  height: 580px;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+/* overlay */
+.energy-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CONTENT ===== */
+.energy-content {
+  position: relative;
+  z-index: 2;
+
+  color: white;
+
+  padding: 42px;
+}
+
+/* title */
+.energy-content h1 {
+  font-size: 72px;
+
+  margin-bottom: 10px;
+}
+
+/* desc */
+.energy-content p {
+  font-size: 22px;
+
+  margin-bottom: 28px;
+
+  line-height: 1.4;
+}
+
+/* buttons */
+.energy-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+/* primary */
+.primary-btn {
+  background: #3e6ae1;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 14px 28px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* secondary */
+.secondary-btn {
+  background: white;
+  color: black;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 14px 28px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}

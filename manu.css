@@ -1,0 +1,248 @@
+/* ===== MEGA MENU ===== */
+.mega-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 150px 120px 70px;
+  height: auto;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.25s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.mega-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* ===== LINKS ===== */
+.car-links {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.car-links span {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+.car-links span:hover {
+  border-bottom: 1px solid #000;
+}
+/* ===== BLUR ===== */
+.overlay-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transition: 0.25s;
+  pointer-events: none;
+  z-index: 800;
+}
+
+.overlay-blur.show {
+  opacity: 1;
+}
+
+/* ===== ซ่อนทุก menu ก่อน ===== */
+.menu-content {
+  display: none;
+  width: 100%;
+}
+
+/* ===== VEHICLES ===== */
+.menu-content.vehicles.active {
+  display: grid;
+  grid-template-columns: auto 280px;
+  justify-content: center;
+  align-items: start;
+  gap: 80px;
+  font-weight: bold;
+  color: #32353a;
+}
+
+/* ===== ENERGY ===== */
+.menu-content.energy.active {
+  display: grid;
+  grid-template-columns: auto 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  font-weight: bold;
+  color: #32353a;
+}
+
+/* ===== CHARGING ===== */
+.menu-content.charging.active {
+  display: grid;
+  grid-template-columns: auto 280px;
+  justify-content: center;
+  align-items: start;
+  gap: 80px;
+  font-weight: bold;
+  color: #32353a;
+}
+
+/* ===== DISCOVER ===== */
+.menu-content.discover.active {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== SHOP ===== */
+.menu-content.shop.active {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== VEHICLES (detail) ===== */
+.menu-content.vehicles .cars {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-content.vehicles .car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-content.vehicles .car img {
+  width: 270px;
+  transition: 0.3s;
+}
+
+.menu-content.vehicles .car:hover img {
+  transform: scale(1.05);
+}
+
+.menu-content .menu-right {
+  border-left: 1px solid #ddd;
+  padding-left: 40px;
+  line-height: 2.2;
+}
+
+/* ===== ENERGY ===== */
+.menu-content.energy .energys {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-content.energy .energy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-content.energy img {
+  width: 200px;
+  height: 140px;
+  object-fit: contain;
+}
+
+/* ===== CHARGING ===== */
+.menu-content.charging .chargings {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-content.charging .charging,
+.menu-content.charging .home-charging,
+.menu-content.charging .supercharging {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-content.charging img {
+  width: 220px;
+  transition: 0.3s;
+}
+
+.menu-content.charging img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== DISCOVER ===== */
+.discover-columns {
+  display: flex;
+  gap: 120px;
+}
+
+.discover-columns .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-columns h4 {
+  font-size: 14px;
+  color: #32353a;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 2.2;
+}
+
+.discover-columns p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 2.2;
+  font-weight: bold;
+}
+
+/* ===== SHOP ===== */
+.menu-content.shop.active {
+  display: flex;
+  justify-content: center;
+}
+
+/* container */
+.menu-content.shop .shops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* ระยะห่างแต่ละ item */
+}
+
+/* item แต่ละอัน */
+.menu-content.shop .shops div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* รูป */
+.menu-content.shop img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* ข้อความ */
+.menu-content.shop p {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #32353a;
+}
+.menu-content.shop div:hover p {
+  text-decoration: underline;
+}
